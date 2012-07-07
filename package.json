@@ -2,6 +2,7 @@
   "name": "fenearstreamer",
   "version": "0.0.0",
   "description": "Dragons, dragons everywhere.",
+  "private": true,
   "keywords": [
     "dragons"
   ],
