@@ -29,6 +29,7 @@
   "dependencies": {
     "bork": "0.0.x"
   },
+  "engine": "node",
   "main": "./build/lib/index.js",
   "licenses": [
     {
