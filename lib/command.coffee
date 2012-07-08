@@ -1,10 +1,8 @@
 #
-# lib/index.coffee
+# lib/command.coffee
 #
 # Copyright (c) 2012 Lee Olayvar <leeolayvar@gmail.com>
 # MIT Licensed
 #
 
-
-
-exports.command = require './command'
+console.log 'Hello Fenear User!'
