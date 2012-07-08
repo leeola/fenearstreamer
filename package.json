@@ -17,7 +17,7 @@
   "scripts": {
     "prepublish": "cake prepublish",
     "test": "cake test",
-    "preinstall": "cake build"
+    "postinstall": "cake build"
   },
   "bin": {
     "fenearstreamer": "./build/bin/fenearstreamer.js"
