@@ -16,8 +16,8 @@
   },
   "scripts": {
     "prepublish": "cake prepublish",
-    "test": "cake test"
-    "preinstall": "cake build",
+    "test": "cake test",
+    "preinstall": "cake build"
   },
   "bin": {
     "fenearstreamer": "./build/bin/fenearstreamer.js"
