@@ -14,8 +14,8 @@ Walker = require 'walker'
 
 
 
-COFFEE_BIN = path.join ['node_modules', 'coffee-script', 'bin', 'coffee']
-MOCHA_BIN = path.join ['node_modules', 'mocha', 'bin', 'mocha']
+COFFEE_BIN = path.join 'node_modules', 'coffee-script', 'bin', 'coffee'
+MOCHA_BIN = path.join 'node_modules', 'mocha', 'bin', 'mocha'
 
 
 
