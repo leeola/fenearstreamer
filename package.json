@@ -16,8 +16,7 @@
   },
   "scripts": {
     "prepublish": "cake prepublish",
-    "test": "cake test",
-    "postinstall": "cake build"
+    "test": "cake test"
   },
   "bin": {
     "fenearstreamer": "./build/bin/fenearstreamer.js"
@@ -29,7 +28,6 @@
     "walker": "1.0.x"
   },
   "dependencies": {
-    "coffee-script": "1.3.x",
     "bork": "0.0.x"
   },
   "engine": "node",
