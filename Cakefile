@@ -81,7 +81,7 @@ copy_compile = (source, output, callback) ->
   bork_task = bork()
   
   coffee_task = bork_task.seq (done) ->
-    exec COFFEE_BIN, ['-co', output, source], -> done()
+    exec 'node', [COFFEE_BIN, '-co', output, source], -> done()
   
   coffee_task.seq (done) ->
     copy source, output,
