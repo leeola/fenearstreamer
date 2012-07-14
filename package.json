@@ -28,6 +28,7 @@
     "walker": "1.0.x"
   },
   "dependencies": {
+    "nomnom": "1.5.x",
     "bork": "0.0.x"
   },
   "engine": "node",
