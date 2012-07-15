@@ -4,15 +4,17 @@
 # Copyright (c) 2012 Lee Olayvar <leeolayvar@gmail.com>
 # MIT Licensed
 #
+path = require 'path'
+
 nomnom = require 'nomnom'
+pork = require 'pork'
 
 
 nomnom.script 'fenearstreamer'
 nomnom.help 'Start and initialize the Streamer process.'
 nomnom.options
   config:
-    # This will be replaced with proper os compatability when we use Pork.
-    default: '~/.fenearstreamer/config.json'
+    default: path.join pork.home(), '.fenearstreamer', 'config.json'
     abbr: 'c'
     metavar: 'FILE'
     help: 'The config file to use when starting the streamer.'
@@ -33,8 +35,7 @@ nomnom.options
       'the given directory.'
   
   library:
-    # This will be replaced with proper os compatability when we use Pork.
-    default: '~/music'
+    default: path.join pork.home(), 'music'
     position: 0
     list: true
     metavar: 'DIRECTORY'
