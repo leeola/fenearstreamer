@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "nomnom": "1.5.x",
-    "bork": "0.0.x"
+    "bork": "0.0.x",
+    "forever": ""
   },
   "engine": "node",
   "main": "./build/lib/index.js",

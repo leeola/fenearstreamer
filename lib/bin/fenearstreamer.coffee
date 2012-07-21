@@ -13,6 +13,12 @@ pork = require 'pork'
 nomnom.script 'fenearstreamer'
 nomnom.help 'Start and initialize the Streamer process.'
 nomnom.options
+  daemon:
+    default: false
+    abbr: 'd'
+    flag: true
+    help: 'Run the streamer as a Forever process.'
+  
   config:
     default: path.join pork.home(), '.fenearstreamer', 'config.json'
     abbr: 'c'
