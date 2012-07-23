@@ -7,4 +7,7 @@
 
 
 
-exports.command = require './command'
+exports.bin = require './bin'
+exports.config = require './config'
+exports.streamer = require './streamer'
+exports.web = require './web'
