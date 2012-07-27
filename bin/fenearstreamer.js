@@ -2,7 +2,7 @@
 //
 // bin/fenearstreamer.js
 //
-// The main fenear streamer entry point.
+// The bin fenear streamer entry point.
 //
 // Note that this file is in JavaScript because CoffeeScript is currently
 // unable to properly add hashbangs as this file has.

@@ -5,9 +5,10 @@
 # MIT Licensed
 #
 path = require 'path'
-
 nomnom = require 'nomnom'
 pork = require 'pork'
+main = require '../main'
+
 
 
 nomnom.script 'fenearstreamer'
@@ -40,8 +41,8 @@ nomnom.options
       'directory as a library directory, so the Streamer can play music from '+
       'the given directory.'
   
-  library:
-    default: path.join pork.home(), 'music'
+  libraries:
+    default: [path.join pork.home(), 'music']
     position: 0
     list: true
     metavar: 'DIRECTORY'
@@ -61,6 +62,7 @@ nomnom.options
       'Note that the streamer will still create and save any configuration '+
       'data that is needed.'
 
-nomnom.parse()
+options = nomnom.parse()
 
-console.log 'Hello Fenear User!'
+# Hand off parsed options to the main start function.
+main.start options
