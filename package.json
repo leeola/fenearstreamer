@@ -32,7 +32,8 @@
     "bork": "0.0.x",
     
     "flatiron": "",
-    "union": ""
+    "union": "",
+    "winston": ""
   },
   "engine": "node",
   "main": "./build/lib/index.js",
